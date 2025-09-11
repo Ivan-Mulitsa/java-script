@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 5 - Mulitsa</title>
+  <script type="text/javascript">
+
+    function WinOpen_mulitsa_1() {
+      window.open("grafika1.html", "okno1", "width=300,height=400,top=50,left=50");
+    }
+    function WinOpen_mulitsa_2() {
+      window.open("grafika2.html", "okno2", "width=300,height=400,top=500,left=50");
+    }
+    function WinOpen_mulitsa_3() {
+      window.open("grafika3.html", "okno3", "width=300,height=400,top=50,left=1200");
+    }
+    function WinOpen_mulitsa_4() {
+      window.open("grafika4.html", "okno4", "width=300,height=400,top=500,left=1200");
+    }
+
+    function okno_zamknij_mulitsa_1() {
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h2 style="color:red; text-align:center;">
+    wykonał: Ivan Mulitsa, mój numer w dzienniku 18, czyli mam układ [(18) mod 4 = 2] → Układ 2
+  </h2>
+
+  <div style="text-align:center; margin:20px;">
+    <input type="button" value="grafika1" onclick="WinOpen_mulitsa_1()">
+    <input type="button" value="grafika2" onclick="WinOpen_mulitsa_2()">
+    <input type="button" value="grafika3" onclick="WinOpen_mulitsa_3()">
+    <input type="button" value="grafika4" onclick="WinOpen_mulitsa_4()">
+  </div>
+
+  <div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_mulitsa_1()">
+  </div>
+</body>
+</html>

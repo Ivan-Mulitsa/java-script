@@ -1,0 +1,28 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+ <html>
+ <body>
+ <div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+// Ivan Mulitsa 2P 11.09.2025
+// Zadanie 11
+ var D1_bil=prompt("Data1=","");
+ var D2_bil=prompt("Data2=","");
+ var sekund;
+ var a=parseFloat(D1_bil);
+ var b=parseFloat(D2_bil);
+ sekund=(a-b)*24*60*60;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij_bilyi()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+ </body>
+ </html>
+ </textarea>
+ </body>
+</html>

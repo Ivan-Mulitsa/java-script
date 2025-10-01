@@ -1,0 +1,41 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+ <html>
+<head>
+    <meta charset="utf-8">   
+    <title>Mulitsa - Zadanie 16</title> 
+</head>
+<body>
+<div style="color:navy; font-size:24px; width:100%;">
+
+<script language="JavaScript">
+
+    var l1_mul = prompt("Podaj pierwszą liczbę A=","");
+    var l2_mul = prompt("Podaj drugą liczbę B=","");
+    var a_mul = parseFloat(l1_mul);
+    var b_mul = parseFloat(l2_mul);
+
+ 
+    var wynik = Math.pow(a_mul+b_mul, 3);
+    var a3 = Math.pow(a_mul, 3);
+    var b3 = Math.pow(b_mul, 3);
+    var skladnik1 = 3*Math.pow(a_mul,2)*b_mul;
+    var skladnik2 = 3*a_mul*Math.pow(b_mul,2);
+
+
+    document.write("(" + a_mul + " + " + b_mul + ")^3 = " 
+        + a_mul + "^3 + 3*" + a_mul + "^2*" + b_mul 
+        + " + 3*" + a_mul + "*" + b_mul + "^2 + " + b_mul + "^3 = "
+        + a3 + " + " + skladnik1 + " + " + skladnik2 + " + " + b3 
+        + " = " + wynik);
+</script>
+
+</div>
+</body>
+</html>
+
+
+ </textarea>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 14 - Mulitsa</title>
+</head>
+<body>
+    <h2>Rozkład ułamka egipskiego na trzy ułamki egipskie</h2>
+    <script>
+        var m_mul = prompt("Podaj wartość m:", );
+        m_mul = parseInt(m_mul);
+
+        // rozkład: 1/m = 1/(m+2) + 1/((m+1)(m+2)) + 1/(m(m+1))
+        var m1_mul = m_mul + 2;
+        var m2_mul = (m_mul + 1) * (m_mul + 2);
+        var m3_mul = m_mul * (m_mul + 1);
+
+        document.write("<p>1/" + m_mul + " = 1/" + m1_mul + " + 1/" + m2_mul + " + 1/" + m3_mul + "</p>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+ <body>
+ <div style="color:green;font-size:42px;">
+
+<script language="JavaScript">
+// Ivan Mulitsa 2P 18.09.2025
+// Zadanie 12
+var D1_mul = prompt("Podaj pierwszy dzień stycznia (D1):","");
+var G1_mul = prompt("Podaj godzinę pierwszego dnia (G1):","");
+var D2_mul = prompt("Podaj drugi dzień stycznia (D2):","");
+var G2_mul = prompt("Podaj godzinę drugiego dnia (G2):","");
+
+
+var D1 = parseInt(D1_mul);
+var G1 = parseInt(G1_mul);
+var D2 = parseInt(D2_mul);
+var G2 = parseInt(G2_mul);
+
+
+var godziny1 = D1 * 24 + G1;
+var godziny2 = D2 * 24 + G2;
+
+
+var roznica = (godziny1 - godziny2) * 3600;
+
+document.write("Ilość sekund między dniem "+D1+" godzina "+G1+" a dniem "+D2+" godzina "+G2+" = "+roznica+" sekund");
+
+function okno_zamknij_mul()
+{
+window.close()
+}
+</script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_mulitsa()"/>
+ </body>
+ </html>
+ 

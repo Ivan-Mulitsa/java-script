@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 20 - Mulitsa</title>
+</head>
+<body>
+<script type="text/javascript">
+function odleglosc_mul(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
+function dlugoscbokow() {
+    var xa_mul = parseFloat(document.getElementById('xa').value);
+    var ya_mul = parseFloat(document.getElementById('ya').value);
+    var xb_mul = parseFloat(document.getElementById('xb').value);
+    var yb_mul = parseFloat(document.getElementById('yb').value);
+    var xc_mul = parseFloat(document.getElementById('xc').value);
+    var yc_mul = parseFloat(document.getElementById('yc').value);
+
+    var AB_mul = odleglosc_mul(xa_mul, ya_mul, xb_mul, yb_mul);
+    var BC_mul  = odleglosc_mul(xb_mul, yb_mul, xc_mul, yc_mul);
+    var AC_mul  = odleglosc_mul(xa_mul, ya_mul, xc_mul, yc_mul);
+
+    document.getElementById('wynik').innerHTML = 
+        "AB = " + AB_mul.toFixed(2) + " cm<br>" +
+        "BC = " + BC_mul.toFixed(2) + " cm<br>" +
+        "AC = " + AC_mul.toFixed(2) + " cm";
+}
+</script>
+
+<h2>Długości boków trójkąta</h2>
+X_A: <input type="text" id="xa" value="0"><br><br>
+Y_A: <input type="text" id="ya" value="0"><br><br>
+X_B: <input type="text" id="xb" value="0"><br><br>
+Y_B: <input type="text" id="yb" value="0"><br><br>
+X_C: <input type="text" id="xc" value="0"><br><br>
+Y_C: <input type="text" id="yc" value="0"><br><br>
+
+<input type="button" value="Oblicz" onclick="dlugoscbokow()"><br><br>
+
+<div id="wynik" style="color:#ff0000; font-size:30px;"></div>
+</body>
+</html>

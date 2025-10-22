@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 22 - Mulitsa</title>
+</head>
+<body>
+<script type="text/javascript">
+function pole_mul(a_mul, b_mul) {
+    return a_mul * b_mul;
+}
+function obwod_mul(a_mul, b_mul) {
+    return 2 * (a_mul + b_mul);
+}
+function obliczProstokat_mul() {
+    var a_mul = parseFloat(document.getElementById('a_mul').value);
+    var b_mul = parseFloat(document.getElementById('b_mul').value);
+    if (isNaN(a_mul) || isNaN(b_mul) || a_mul <= 0 || b_mul <= 0) {
+        alert("Niepoprawne dane!");
+        return;
+    }
+    var p_mul= pole_mul(a_mul, b_mul);
+    var o_mul = obwod_mul(a_mul, b_mul);
+    document.getElementById('wynik').innerHTML = 
+        "Pole prostokąta = " + p_mul.toFixed(2) + " cm²<br>" +
+        "Obwód prostokąta = " + o_mul.toFixed(2) + " cm";
+}
+</script>
+
+<h1>Prostokąt</h1>
+Długość boku a: <input type="text" id="a_mul" value="0"><br><br>
+Długość boku b: <input type="text" id="b_mul" value="0"><br><br>
+
+<input type="button" value="Oblicz" onclick="obliczProstokat_mul()"><br><br>
+
+<div id="wynik" style="color:#ff0000; font-size:30px;"></div>
+</body>
+</html>

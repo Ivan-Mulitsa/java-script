@@ -1,0 +1,41 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 23 - Mulitsa</title>
+</head>
+<body>
+<script type="text/javascript">
+function poldrabina_mulitsa() {
+    var D_mul = parseFloat(document.getElementById('D_mul').value);
+    var X_mul = parseFloat(document.getElementById('X_mul').value);
+    if (isNaN(D_mul) || isNaN(X_mul) || D_mul <= 0 || X_mul <= 0) {
+        alert("Błędne dane");
+        return;
+    }
+    var dl_mul = Math.sqrt(D_mul*D_mul + X_mul*X_mul);
+    var katRad_mul = Math.atan(D_mul / X_mul);
+    var katStopnie_mul= katRad_mul * 180 / Math.PI;
+    document.getElementById('wynik').innerHTML =
+        "Długość drabiny = " + dl_mul.toFixed(2) + " cm<br>" +
+        "Kąt nachylenia = " + katStopnie_mul.toFixed(2) + "°";
+}
+</script>
+
+<h1>Obliczania odleglośi od drabiny i kąta</h1>
+Podaj d= <input type="text" id="D_mul" value="0">
+Podaj x= <input type="text" id="X_mul" value="0"><br><br>
+
+<input type="button" value="Oblicz" onclick="poldrabina_mulitsa()"><br><br>
+
+<div id="wynik" style="color:#ff0000; font-size:30px;"></div>
+</body>
+</html>
+
+
+ </textarea>
+ </body>
+</html>

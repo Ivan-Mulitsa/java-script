@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 28 - Ivan Mulitsa</title>
+<script>
+document.write('<h2>1. Rodzaje „filozofii” programowania</h2>');
+document.write('<p>Wyróżniamy różne rodzaje „filozofii” (paradygmatów) programowania, między innymi:</p>');
+document.write('<ul>');
+document.write('<li>Programowanie strukturalne</li>');
+document.write('<li>Programowanie obiektowe</li>');
+document.write('</ul>');
+
+document.write('<h2>2. Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego</h2>');
+document.write('<p><b>Programowanie strukturalne</b> – paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli.</p>');
+document.write('<p>Programowanie strukturalne zwiększa czytelność i ułatwia analizę programów, co stanowi znaczącą poprawę w stosunku do trudnego w utrzymaniu „<i>spaghetti code</i>” często wynikającego z użycia instrukcji <i>goto</i>.</p>');
+
+document.write('<h3>Założenia programowania strukturalnego:</h3>');
+document.write('<ol>');
+document.write('<li>Podzielone bloki kodu mają jeden punkt wejścia (mogą mieć wiele punktów wyjścia),</li>');
+document.write('<li>Wykonywanie wyrażeń w określonej kolejności,</li>');
+document.write('<li>Używanie instrukcji warunkowych (if, if else),</li>');
+document.write('<li>Używanie pętli (for, while, do while),</li>');
+document.write('<li>Unikanie instrukcji skoku (goto),</li>');
+document.write('<li>Unikanie instrukcji break, continue,</li>');
+document.write('<li>W programowaniu proceduralnym (strukturalnym) funkcje i zmienne opisujące dany przedmiot nie są ze sobą powiązane.</li>');
+document.write('</ol>');
+
+document.write('<h2>3. Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe)</h2>');
+document.write('<p><b>Programowanie obiektowe</b> (ang. <i>object-oriented programming</i>) — sposób programowania, w którym programy definiuje się za pomocą:</p>');
+document.write('<ul>');
+document.write('<li><b>obiektów</b> (obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę, np. okienka w Windows → okienko jest obiektem),</li>');
+document.write('<li><b>stanu</b> (czyli danych; w programowaniu obiektowym nazywane najczęściej <i>polami</i>), np. wielkość okienka w Windows,</li>');
+document.write('<li><b>zachowania</b> (czyli posiadania pewnych procedur — metod). Przykładowo metoda do zmiany wielkości okienka.</li>');
+document.write('</ul>');
+document.write('<p>Czyli obiektowy program komputerowy wyrażony jest jako zbiór takich obiektów, komunikujących się pomiędzy sobą w celu wykonywania zadań.</p>');
+
+document.write('<h2>4. Dlaczego stosujemy programowanie obiektowe?</h2>');
+document.write('<ul>');
+document.write('<li>Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów, ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy, dokonujemy pewnego ich odwzorowania rzeczywistości, np. definiujemy obiekt samochód. Definiujemy pola, czyli jego stan — np. rok produkcji, marka, kolor. Definiujemy również metody, czyli co umie, np. hamowanie, przyspieszenie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej.</li>');
+document.write('<li>Programowanie obiektowe pozwala na lepsze gospodarowanie pamięcią komputera, ponieważ gdy obiekt staje się zbędny, można go usunąć, co zwolni pamięć zajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka.</li>');
+document.write('</ul>');
+
+document.write('<h2>5. Omów następujące pojęcia (w krótkiej formie)</h2>');
+
+document.write('<h3>Klasa (ang. "class")</h3>');
+document.write('<p>Rodzaj formy opisującej, jak będą wyglądały tworzone na jej podstawie nowe obiekty. Klasa to złożony typ będący opisem (definicją) obiektu lub obiektów wraz z definicją pól i metod obiektów.</p>');
+
+document.write('<h3>Obiekt (ang. "object")</h3>');
+document.write('<p>Instancja (byt, twór) powstały na podstawie klasy. Obiekty są konstrukcjami programistycznymi mającymi tzw. właściwości (pola obiektu), którymi mogą być zmienne lub inne obiekty. Z obiektami powiązane są funkcje wykonujące operacje na ich właściwościach – metody.</p>');
+
+document.write('<h3>Właściwość (ang. "property")</h3>');
+document.write('<p>Własność obiektu, np. kolor.</p>');
+
+document.write('<h3>Metoda (ang. "method")</h3>');
+document.write('<p>Zdolność (czynność), którą umie wykonywać obiekt, np. chodzenie (idź). Realizowana w postaci konstrukcji podobnej do funkcji.</p>');
+
+document.write('<h3>Konstruktor (ang. "constructor")</h3>');
+document.write('<p>Metoda wywoływana w momencie inicjalizacji obiektu. Np. tworzymy obiekt, a wraz z tworzeniem obiektu uruchomi się metoda, która nada mu imię i nazwisko.</p>');
+
+document.write('<h3>Dziedziczenie (ang. "inheritance")</h3>');
+document.write('<p>Klasa może dziedziczyć właściwości od innej klasy. Tworzymy klasę na podstawie innej klasy, pobierając od „rodzica” właściwości i metody, mogąc dopisać nowe pola i nowe metody.</p>');
+
+document.write('<h3>Hermetyzacja (ang. "encapsulation")</h3>');
+document.write('<p>Wewnątrz ciała klasy znajdują się pola i metody. Część pól i metod może odpowiadać ukryciu ich przed „zewnętrznym światem”, tak jak to ma miejsce z przedmiotami ze świata rzeczywistego.</p>');
+
+document.write('<h3>Polimorfizm (ang. "polymorphism")</h3>');
+document.write('<p>Polimorfizm, czyli wielopostaciowość. Oznacza to, że dany obiekt może zmieniać swoją postać w zależności od potrzeb. Może to być realizowane w formie metod wywoływanych z różną ilością parametrów. Tak więc utworzony obiekt może być traktowany polimorficznie, bo zachowuje się różnie w zależności od sposobu uruchamiania jego metod.</p>');
+</script>
+</head>
+<body>
+</body>
+</html>

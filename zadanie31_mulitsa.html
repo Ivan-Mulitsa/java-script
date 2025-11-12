@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Zadanaie 31 - Ivan Mulitsa</title>
+<script type="text/javascript">
+
+var dom = {
+    wysokosc: 8,
+    powierzchnia: 140,
+    kolor: 'biały',
+    pokaz: function() {
+        document.write('Obiekt: Dom<br>');
+        document.write('Pola:<br>');
+        document.write('wysokosc: ' + this.wysokosc + '<br>');
+        document.write('powierzchnia: ' + this.powierzchnia + '<br>');
+        document.write('kolor: ' + this.kolor + '<br>');
+        document.write('Metody:<br>');
+        document.write('pokaz, dom_wyswietl_mulitsa<br>');
+    }
+};
+
+dom.pokaz();
+dom.adres = "ul. Kwiatowa 5";
+dom.dom_wyswietl_mulitsa = function() {
+    alert("Adres domu: " + this.adres);
+}
+dom.dom_wyswietl_mulitsa();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe.<br>
+Obiekt: dom<br>
+Pola: wysokosc, powierzchnia, kolor<br>
+nowe pole: adres<br>
+Metody:
+pokaz <br>
+nowa metoda: dom_wyswietl_mulitsa
+</body>
+</html>

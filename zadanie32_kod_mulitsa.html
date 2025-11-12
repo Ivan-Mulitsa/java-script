@@ -1,0 +1,70 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+
+<html>
+<head>
+<script type="text/javascript">
+
+function Dom(wysokosc_k, powierzchnia_k, kolor_k) {
+    this.wysokosc = wysokosc_k;
+    this.powierzchnia = powierzchnia_k;
+    this.kolor = kolor_k;
+}
+
+
+Dom.prototype.pokaz = function() {
+    document.write('Obiekt: Dom<br>');
+    document.write('wysokosc: ' + this.wysokosc + '<br>');
+    document.write('powierzchnia: ' + this.powierzchnia + '<br>');
+    document.write('kolor: ' + this.kolor + '<br>');
+}
+
+
+var dom1 = new Dom(8, 140, "biały");
+var dom2 = new Dom(12, 90, "zielony");
+var dom3 = new Dom(5, 60, "czerwony");
+
+
+dom1.adres = "ul. Kwiatowa 5";
+dom2.adres = "ul. Brzozowa 2";
+dom3.adres = "ul. Słoneczna 9";
+
+dom1.dom_wyswietl_mulitsa = function() {
+    alert("Adres domu: " + this.adres);
+}
+dom2.dom_wyswietl_mulitsa = function() {
+    alert("Adres domu: " + this.adres);
+}
+dom3.dom_wyswietl_mulitsa = function() {
+    alert("Adres domu: " + this.adres);
+}
+
+dom1.pokaz();
+dom1.dom_wyswietl_mulitsa();
+document.write("<br>");
+dom2.pokaz();
+dom2.dom_wyswietl_mulitsa();
+document.write("<br>");
+dom3.pokaz();
+dom3.dom_wyswietl_mulitsa();
+document.write("<br>");
+
+
+document.write("Domy i ich pola:<br>");
+document.write("Dom pierwszy: wys. " + dom1.wysokosc + " pow. " + dom1.powierzchnia + " kolor: " + dom1.kolor + " adres: " + dom1.adres + "<br>");
+document.write("Dom drugi: wys. " + dom2.wysokosc + " pow. " + dom2.powierzchnia + " kolor: " + dom2.kolor + " adres: " + dom2.adres + "<br>");
+document.write("Dom trzeci: wys. " + dom3.wysokosc + " pow. " + dom3.powierzchnia + " kolor: " + dom3.kolor + " adres: " + dom3.adres + "<br>");
+
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe.<br>
+</body>
+</html>
+
+
+ </textarea>
+ </body>
+</html>

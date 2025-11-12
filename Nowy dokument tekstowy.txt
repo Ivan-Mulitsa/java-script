@@ -1,0 +1,76 @@
+Jasne, krótko i na temat:
+
+---
+
+1. **Pętla for z jedną instrukcją:**
+
+```cpp
+for (int i = 0; i < 10; i++)
+    printf("!");
+```
+
+---
+
+2. **Pętla for z wieloma instrukcjami:**
+
+```cpp
+for (int i = 0; i < 10; i++) {
+    printf("!");
+    cout << i << endl;
+}
+```
+
+---
+
+3. **Algorytm pętli for:**
+
+* Inicjalizacja zmiennej (np. `i=0`)
+* Sprawdzenie warunku (`i < 10`)
+* Wykonanie ciała pętli
+* Inkrementacja (`i++`)
+* Powtórz aż warunek fałszywy
+
+---
+
+4. **Przykłady:**
+
+* Pełna:
+
+```cpp
+for (int i=0; i<=99; i++) printf("!");
+```
+
+* Z inicjalizacją poza pętlą:
+
+```cpp
+int start = 0;
+for (int i = start; i <= 99; i++) printf("!");
+```
+
+* Z warunkiem obliczanym dynamicznie:
+
+```cpp
+int limit = 99;
+for (int i=0; i<=limit; i++) printf("!");
+```
+
+---
+
+5. **Pętla nie wykona się, gdy warunek jest od razu fałszywy, np.:**
+
+```cpp
+for (int i=10; i<0; i++) // nie wykona się
+```
+
+---
+
+6. **Pętla wydająca dźwięk:**
+
+```cpp
+for (int i=0; i<10; i++)
+    printf("\a"); // dźwięk systemowy beep
+```
+
+---
+
+Gotowe! Jeśli chcesz, mogę pomóc z czymś jeszcze.

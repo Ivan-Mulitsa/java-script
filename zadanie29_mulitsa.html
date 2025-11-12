@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zadanie 29 — Ivan Mulitsa</title>
+</head>
+<body>
+<script>
+
+document.write('<h2>1. W jaki sposób można określić właściwość danego obiektu (2 sposoby)?</h2>');
+document.write('<p><b>Sposób 1 (kropkowy):</b> auto.marka = "Opel Omega";</p>');
+document.write('<p><b>Sposób 2 (nawiasowy):</b> auto["cena"] = 25000; auto[pole] = 1996;</p>');
+
+document.write('<h2>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</h2>');
+document.write('<p>Odwołanie do pola: samochod.kolor lub samochod["kolor"]. Wywołanie metody: samochod.jedz();</p>');
+
+document.write('<h2>3. Wymień cechy charakterystyczne konstruktora.</h2>');
+document.write('<ul>');
+document.write('<li>Jest specjalną funkcją do tworzenia obiektów.</li>');
+document.write('<li>Wywołuje się ją z użyciem słowa <code>new</code>.</li>');
+document.write('<li>Przypisuje pola i metody za pomocą <code>this</code>.</li>');
+document.write('<li>Zazwyczaj nazwa konstruktora zaczyna się wielką literą.</li>');
+document.write('</ul>');
+
+document.write('<h2>4. Konstruowanie obiektu — przykład</h2>');
+document.write('<p>var osoba_1 = { nazwisko: "Kowalski", imie: "Jan", zawod: "piekarz", wyswietl: function() { document.write(this.nazwisko + " " + this.imie); } };</p>');
+
+document.write('<h2>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody?</h2>');
+document.write('<p><b>this</b> wskazuje na bieżący obiekt. Pola i metody w literałach obiektowych oddziela się przecinkami.</p>');
+
+document.write('<h2>6. Konstruktor w JS — przykład wraz z opisem</h2>');
+document.write('<p>function klient(nazwisko_k, imie_k, zawod_k) { this.nazwisko = nazwisko_k; this.imie = imie_k; this.zawod = zawod_k; this.wypisz = function() { document.write(this.nazwisko + " " + this.imie); } }</p>');
+document.write('<p>var osoba1 = new klient("Kowalski","Jan","kierowca"); var osoba2 = new klient("Nowak","Anna","sekretarka");</p>');
+
+document.write('<h2>7. Znaczenie słowa kluczowego new wraz z przykładem</h2>');
+document.write('<p><code>new</code> tworzy nowy obiekt według konstruktora. Przykład: var osoba1 = new klient("Kowalski","Jan","kierowca");</p>');
+
+document.write('<h2>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem</h2>');
+document.write('<p>Właściwość <code>prototype</code> pozwala dodać metody i właściwości wspólne dla wszystkich obiektów utworzonych przez konstruktor.</p>');
+document.write('<p>function klient() { this.nazwisko = "Bielski"; this.imie = "Pawel"; } klient.prototype.pisz_dane = function() { document.write(this.nazwisko + " " + this.imie); } klient.prototype.zawod = "kierowca"; var osoba1 = new klient(); osoba1.pisz_dane();</p>');
+
+</script>
+</body>
+</html>

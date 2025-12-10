@@ -1,0 +1,34 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Sprawdzenie danych Mulitsa</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+do {
+    var liczba1_mul = prompt("wysokość=", "");
+    var h_mul = parseFloat(liczba1_mul);
+}
+while (h_mul <= 0);
+
+do {
+    var liczba2_mul = prompt("podstawę=", "");
+    var a_mul = parseFloat(liczba2_mul);
+}
+while (!(a_mul > 0));
+
+var Pole_mul = a_mul * h_mul / 2;
+document.write("Pole=" + Pole_mul.toFixed(2) + " cm^2" + "<br>");
+</script>
+</div>
+</body>
+</html>
+
+ </textarea>
+ </body>
+</html>

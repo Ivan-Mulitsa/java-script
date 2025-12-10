@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 59 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var R_mul = parseFloat(prompt("Podaj promień koła R:", ""));
+var N_mul = 0;
+var R_int_mul = Math.floor(R_mul);
+
+for(i_mul = Math.floor(-R_mul - 1); i_mul <= Math.floor(R_mul + 1); i_mul++)
+{
+    for(j_mul = Math.floor(-R_mul - 1); j_mul <= Math.floor(R_mul + 1); j_mul++)
+    {
+        if(i_mul * i_mul + j_mul * j_mul <= R_mul * R_mul)
+        {
+            N_mul++;
+        }
+    }
+}
+
+document.write("Promień koła R = " + R_mul + "<br>");
+document.write("Liczba punktów kratowych N(R) = " + N_mul + "<br>");
+</script>
+</body>
+</html>

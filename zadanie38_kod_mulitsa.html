@@ -1,0 +1,96 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 38 - Mulitsa</title>
+</head>
+
+<body>
+<script language="JavaScript">
+
+
+var imie_mul = "Ivan";
+var nazwisko_mul = "Mulitsa";
+var nr_dziennika_mul = 18;
+
+
+var liczba1_mul = imie_mul.length;               
+var liczba2_mul = liczba1_mul + 7;                 
+var liczba3_mul = nazwisko_mul.length;             
+var liczba4_mul = liczba3_mul + 4;                  
+
+
+document.write("<div style='font-size:40px;color:green;background:silver;'>");
+document.write("Moje nazwisko to: " + imie_mul + " " + nazwisko_mul + "<br>");
+document.write("liczba1 = " + liczba1_mul + "<br>");
+document.write("liczba2 = " + liczba1_mul + " + 7 = " + liczba2_mul + "<br>");
+document.write("liczba3 = " + liczba3_mul + "<br>");
+document.write("liczba4 = " + liczba3_mul + " + 4 = " + liczba4_mul + "<br>");
+document.write("</div>");
+
+
+document.write("<div style='font-size:40px;color:red;background:silver;'>");
+document.write("---------- MENU ----------<br>");
+document.write(liczba1_mul + " - wyświetlanie teorii o operatorach<br>");
+document.write((liczba3_mul + 20) + " - sprawdzanie czy liczba należy do przedziału (" + liczba1_mul + " ; " + liczba2_mul + "]<br>");
+document.write(nr_dziennika_mul + " - sprawdzanie czy liczba należy do przedziału (-∞ ; " + liczba1_mul + ") lub [" + liczba2_mul + " ; +∞)<br>");
+document.write("</div>");
+
+
+var opcja_mul = parseInt(prompt("Podaj numer opcji:", ""));
+
+
+if(opcja_mul == liczba1_mul)
+{
+  document.write("<font color='blue' size='7'>Jesteś w opcji " + liczba1_mul + " --> teoria</font><br>");
+  document.write("&&  i (AND)<br>");
+  document.write("||  lub (OR)<br>");
+  document.write("!   zaprzeczenie (NOT)<br>");
+}
+
+
+else if(opcja_mul == (liczba3_mul + 20))
+{
+  var x = parseFloat(prompt("Podaj liczbę:", ""));
+
+  if(x > liczba1_mul && x <= liczba2_mul)
+  {
+    document.write("liczba należy do przedziału (" + liczba1_mul + " ; " + liczba2_mul + "]");
+  }
+  else
+  {
+    document.write("liczba nie należy do przedziału (" + liczba1_mul + " ; " + liczba2_mul + "]");
+  }
+}
+
+
+else if(opcja_mul == nr_dziennika_mul)
+{
+  var y = parseFloat(prompt("Podaj liczbę:", ""));
+
+  if(y < liczba1_mul || y >= liczba2_mul)
+  {
+    document.write("liczba należy do przedziału (-∞ ; " + liczba1_mul + ") lub [" + liczba2_mul + " ; +∞)");
+  }
+  else
+  {
+    document.write("liczba nie należy do przedziału (-∞ ; " + liczba1_mul + ") lub [" + liczba2_mul + " ; +∞)");
+  }
+}
+
+
+else
+{
+  document.write("<font color='red' size='7'>nie ma takiej opcji</font>");
+}
+
+</script>
+</body>
+</html>
+
+ </textarea>
+ </body>
+</html>

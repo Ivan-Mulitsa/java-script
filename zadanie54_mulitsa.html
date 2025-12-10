@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 54 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var imie_mul = prompt("Podaj imię:", "");
+var nazwisko_mul = prompt("Podaj nazwisko:", "");
+
+var a_mul = (nazwisko_mul.length % 4) + 5;
+var b_mul = (imie_mul.length % 6) + 20;
+
+for(var i_mul = 1; i_mul <= b_mul; i_mul++)
+{
+    document.write("*");
+}
+document.write("<br>");
+
+for(var j_mul = 1; j_mul <= (a_mul - 2); j_mul++)
+{
+    document.write("*");
+    for(var k_mul = 1; k_mul <= (b_mul - 2); k_mul++)
+    {
+        document.write("&nbsp;");
+    }
+    document.write("*<br>");
+}
+
+for(var i_mul = 1; i_mul <= b_mul; i_mul++)
+{
+    document.write("*");
+}
+</script>
+</body>
+</html>

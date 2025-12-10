@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 45 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var liczba_mul = parseFloat(prompt("Podaj liczbę:", ""));
+var ile_razy_mul = (7 % 4) + 10;
+var wielkosc_mul = (7 % 3) + 40;
+
+document.write("ilość wykonania pętli = " + ile_razy_mul + "<br>");
+document.write("wielkość liter = " + wielkosc_mul + "px<br>");
+
+if(liczba_mul % 2 == 0)
+{
+    for(i_mul = 1; i_mul <= liczba_mul; i_mul++)
+    {
+        document.write("<p style=\"font-size:" + wielkosc_mul + "px; color:blue;\">Mulitsa</p>");
+    }
+}
+else
+{
+    for(i_mul = 1; i_mul <= liczba_mul; i_mul++)
+    {
+        document.write("<p style=\"font-size:" + wielkosc_mul + "px; color:green;\">Ivan</p>");
+    }
+}
+</script>
+</body>
+</html>

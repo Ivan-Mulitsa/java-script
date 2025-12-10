@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 53 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var a_mul = parseFloat(prompt("Podaj a:", ""));
+var b_mul = parseFloat(prompt("Podaj b:", ""));
+
+for(var i_mul = 1; i_mul <= b_mul; i_mul++)
+{
+    document.write("*");
+}
+document.write("<br>");
+
+var wiersz_mul = "*";
+for(var i_mul = 1; i_mul <= (b_mul - 2); i_mul++)
+{
+    wiersz_mul = wiersz_mul + "&nbsp;&nbsp;";
+}
+wiersz_mul = wiersz_mul + "*";
+
+for(var j_mul = 1; j_mul <= (a_mul - 2); j_mul++)
+{
+    document.write(wiersz_mul + "<br>");
+}
+
+for(var i_mul = 1; i_mul <= b_mul; i_mul++)
+{
+    document.write("*");
+}
+</script>
+</body>
+</html>

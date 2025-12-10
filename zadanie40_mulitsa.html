@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Zadanie JavaScript</title>
+<meta charset="utf-8">
+<style>
+h1 { text-transform: uppercase; }
+</style>
+</head>
+<body>
+<h1>Proste działania</h1>
+<label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+<br><br>
+<label for="b">Podaj drugą liczbę:</label> <input type="number" id="b">
+<br><br>
+<input type="button" value="DODAWANIE" onclick="suma_mul()">
+<input type="button" value="ODEJMOWANIE" onclick="roznica_mul()">
+<input type="button" value="MNOŻENIE" onclick="iloczyn_mul()">
+<input type="button" value="DZIELENIE" onclick="iloraz_mul()">
+<div id="wynik" style="margin-top:20px;"></div>
+
+<script>
+function suma_mul()
+{
+    var a_mul = document.getElementById("a").value;
+    var b_mul = document.getElementById("b").value;
+    var wynik_mul = document.getElementById("wynik");
+
+    if (a_mul == "" || b_mul == "")
+    {
+        wynik_mul.innerHTML = "Proszę uzupełnić obie liczby.";
+    } 
+    else
+    {
+        a_mul = parseFloat(a_mul);
+        b_mul = parseFloat(b_mul);
+        var suma_mul = a_mul + b_mul;
+        wynik_mul.innerHTML = "Wynik działania wynosi: " + suma_mul;
+    }
+}
+
+function roznica_mul()
+{
+    var a_mul = document.getElementById("a").value;
+    var b_mul = document.getElementById("b").value;
+    var wynik_mul = document.getElementById("wynik");
+
+    if (a_mul == "" || b_mul == "")
+    {
+        wynik_mul.innerHTML = "Proszę uzupełnić obie liczby.";
+    } 
+    else
+    {
+        a_mul = parseFloat(a_mul);
+        b_mul = parseFloat(b_mul);
+        var roznica_mul = a_mul - b_mul;
+        wynik_mul.innerHTML = "Wynik działania wynosi: " + roznica_mul;
+    }
+}
+
+function iloczyn_mul()
+{
+    var a_mul = document.getElementById("a").value;
+    var b_mul = document.getElementById("b").value;
+    var wynik_mul = document.getElementById("wynik");
+
+    if (a_mul == "" || b_mul == "")
+    {
+        wynik_mul.innerHTML = "Proszę uzupełnić obie liczby.";
+    } 
+    else
+    {
+        a_mul = parseFloat(a_mul);
+        b_mul = parseFloat(b_mul);
+        var iloczyn_mul = a_mul * b_mul;
+        wynik_mul.innerHTML = "Wynik działania wynosi: " + iloczynyn_mul;
+    }
+}
+
+function iloraz_mul()
+{
+    var a_mul = document.getElementById("a").value;
+    var b_mul = document.getElementById("b").value;
+    var wynik_mul = document.getElementById("wynik");
+
+    if (a_mul == "" || b_mul == "")
+    {
+        wynik_mul.innerHTML = "Proszę uzupełnić obie liczby.";
+    } 
+    else
+    {
+        a_mul = parseFloat(a_mul);
+        b_mul = parseFloat(b_mul);
+
+        if (b_mul == 0)
+        {
+            wynik_mul.innerHTML = "Nie wolno dzielić przez zero.";
+        }
+        else
+        {
+            var iloraz_mul = a_mul / b_mul;
+            wynik_mul.innerHTML = "Wynik działania wynosi: " + iloraz_mul;
+        }
+    }
+}
+</script>
+</body>
+</html>

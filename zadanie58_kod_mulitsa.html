@@ -1,0 +1,45 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 58 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var liczba1_mul = parseFloat(prompt("Podaj pierwszą liczbę:", ""));
+var liczba2_mul = parseFloat(prompt("Podaj drugą liczbę:", ""));
+
+if(liczba1_mul == liczba2_mul)
+{
+    confirm("Liczby są równe. Brak obliczeń.");
+}
+else if(liczba1_mul < liczba2_mul)
+{
+    for(i_mul = liczba1_mul + 1; i_mul < liczba2_mul; i_mul++)
+    {
+        if(i_mul % 2 == 1)
+        {
+            document.write("<font color=green>" + i_mul + "</font><br>");
+        }
+    }
+}
+else
+{
+    for(i_mul = liczba1_mul - 1; i_mul > liczba2_mul; i_mul--)
+    {
+        if(i_mul % 2 == 1)
+        {
+            document.write("<font color=blue size=1>" + i_mul + "</font><br>");
+        }
+    }
+}
+</script>
+</body>
+</html>
+
+ </textarea>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>    
+    <script>
+         do{
+                var liczba = prompt("Podaj liczbę n:");  
+                var n_mul = parseFloat(liczba);  
+            }while(n_mul<=0)
+            
+            if(n_mul>0){silnia_mul = 1;
+                for(i_mul=1;i_mul<=n_mul;i_mul++){
+                    silnia_mul*=i_mul;
+                }
+                document.write("n="+n_mul+"<br>"+n_mul+"!="+silnia_mul);
+            }
+
+    </script>
+</body>
+</html>
+
+ </textarea>
+ </body>
+</html>

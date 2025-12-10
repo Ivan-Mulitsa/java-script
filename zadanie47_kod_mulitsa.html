@@ -1,0 +1,32 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<TITLE>Zadanie 47 - Mulitsa</TITLE>
+</head>
+<body>
+<script language="JavaScript">
+var a_mul, b_mul, c_mul;
+
+do {
+    a_mul = parseFloat(prompt("Podaj bok a:", ""));
+    b_mul = parseFloat(prompt("Podaj bok b:", ""));
+    c_mul = parseFloat(prompt("Podaj bok c:", ""));
+
+    if(!((a_mul > 0) && (b_mul > 0) && (c_mul > 0) && (a_mul + b_mul > c_mul) && (a_mul + c_mul > b_mul) && (c_mul + b_mul > a_mul))) {
+        alert("Boki nie tworzą trójkąta. Podaj ponownie.");
+    }
+}
+while(!((a_mul > 0) && (b_mul > 0) && (c_mul > 0) && (a_mul + b_mul > c_mul) && (a_mul + c_mul > b_mul) && (c_mul + b_mul > a_mul)));
+
+document.write("Trójkąt o bokach: a=" + a_mul + ", b=" + b_mul + ", c=" + c_mul + "<br>");
+</script>
+</body>
+</html>
+
+ </textarea>
+ </body>
+</html>
